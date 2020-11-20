@@ -12,16 +12,24 @@ def loop_message_n_times(message, num)
   end
 end
 
+# def output_array(array)
+#   array.each do |i|
+#     puts i
+#   end
+# end
+
 def output_array(array)
-  array.each do |i|
-    puts i
-  end
+  array.each{|i| puts i}
 end
 
+# def return_string_array(array)
+#   new_array = []
+#   array.each do |i|
+#     new_array << i.to_s  
+#   end
+#   new_array
+# end
+
 def return_string_array(array)
-  new_array = []
-  array.each do |i|
-    new_array << i.to_s  
-  end
-  new_array
+  array.map{|i| i.to_s}
 end
